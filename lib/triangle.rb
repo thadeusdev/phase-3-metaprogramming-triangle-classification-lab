@@ -1,6 +1,6 @@
 class Triangle
   
-  attr_accessor :side1, side2, side3
+  attr_accessor :side1, :side2, :side3
 
   def initialize(side1, side2, side3)
     @side1 = side1
@@ -25,6 +25,7 @@ class Triangle
   end
 
   class TriangleError < StandardError
+
     def message
       "There are not valid sizes"
     end
